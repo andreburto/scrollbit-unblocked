@@ -2,7 +2,7 @@
 
 ### About
 
-The [scroll:bit]() is an **AMAZING** add-on to the [micro:bit]().
+The [scroll:bit](https://shop.pimoroni.com/products/scroll-bit) is an **AMAZING** add-on to the [micro:bit](https://microbit.org/).
 
 My one issue with their driver is that the text scroll is blocking.
 This project tries to fix that by using some techniques I picked up when playing with [writing screen savers](https://github.com/andreburto/straight_lines).
