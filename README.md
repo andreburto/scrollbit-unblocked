@@ -9,6 +9,12 @@ This project tries to fix that by using some techniques I picked up when playing
 
 This code is offered as-is and without any promises or claims.
 
+### Files
+
+* `scrollbit.py`, classes that drive the scroll:bit.
+* `main.py`, main demonstration program used to show off the non-blocking scroll.
+* `dots.py`, original testbed used to develop `ScrollBit` class.
+
 ### Resources
 
 The original [micropython-scrollbit](https://github.com/pimoroni/micropython-scrollbit) library, which this project borrows from heavily.
