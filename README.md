@@ -11,9 +11,16 @@ This code is offered as-is and without any promises or claims.
 
 ### Files
 
+##### Source
+
 * `scrollbit.py`, classes that drive the scroll:bit.
-* `main.py`, main demonstration program used to show off the non-blocking scroll.
-* `dots.py`, original testbed used to develop `ScrollBit` class.
+
+##### Examples
+
+All example files unless otherwise noted work alongside the `scrollbit.py` file.
+
+* `dots`, original testbed used to develop `ScrollBit` class.
+* `hello_goodbye`, main demonstration program used to show off the non-blocking text scroll.
 
 ### Resources
 
@@ -26,7 +33,12 @@ The [BBC micro:bit MicroPython](https://microbit-micropython.readthedocs.io/en/l
 
 ### Log
 
-**2020-08-01** - Achieved non-blocking horizontal scrolling text. Woohoo!
+##### 2020-08-14
+* Made minor changes to `scrollbit.py` to removed unneeded commands.
+* Modified layout of project to keep driver class source code and examples in separate locations.
+
+##### 2020-08-01
+* Achieved non-blocking horizontal scrolling text. Woohoo!
 
 ### To Do
 

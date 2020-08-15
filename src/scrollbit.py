@@ -1,11 +1,11 @@
 # Original code: https://github.com/pimoroni/micropython-scrollbit
 # This code is derived from the original ScrollBit code and refactored into a class.
 # Much of the functionality is missing but that will come in time.
+from microbit import i2c, Image as I
 
 
 class ScrollBit():
     def __init__(self, w=17, h=7, o=0):
-        from microbit import i2c
         self.i2c = i2c
         self.h = h
         self.w = w
@@ -59,13 +59,10 @@ class ScrollText():
     start_y = 1
 
     def __init__(self, b=100, sb=None):
-        from microbit import Image as I
         self.img = I
         self.i = [getattr(I, x) for x in dir(I) if hasattr(getattr(I, x), "get_pixel")]
-
         self.b = b
         self.sb = sb
-
         self.reset()
 
     def char_len(self, char):
@@ -97,7 +94,6 @@ class ScrollText():
         return True
 
     def write(self, offset_col=0, offset_row=0):
-        i = None
         for letter in self.t:
             i = None
             letter_width = self.char_len(letter)
@@ -113,7 +109,6 @@ class ScrollText():
                 if not self.draw_icon(offset_col, offset_row, i):
                     return
             offset_col += letter_width + 1
-        del i
 
     def reset(self):
         self.x = self.start_x
